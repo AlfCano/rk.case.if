@@ -1,0 +1,42 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="FixMixedDates.js" />
+	<help file="FixMixedDates.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Fix Mixed Dates (Excel/Text)">
+		<row id="row_vDFMDVDME4">
+			<varselector id="vs_date" />
+			<column id="clm_vDFMDVDME4">
+				<varslot id="date_df" label="Data Frame" source="vs_date" classes="data.frame" required="true" />
+				<varslot id="date_var" label="Messy Date Variable" source="vs_date" required="true" />
+				<text id="txt_DME44197">
+					Detects and converts Microsoft Excel serial numbers (e.g., 44197) and standard text dates simultaneously.
+				</text>
+				<dropdown id="date_fmt" label="Text Date Format (for non-Excel dates)">
+					<option label="Year-Month-Day (ymd)" value="ymd" checked="true" />
+					<option label="Day-Month-Year (dmy)" value="dmy" />
+					<option label="Month-Day-Year (mdy)" value="mdy" />
+					<option label="Year-Month-Day Hour:Min:Sec (ymd_hms)" value="ymd_hms" />
+				</dropdown>
+				<input label="Output Variable Name (Use original to overwrite)" id="date_outname" initial="date_clean" required="true" />
+				<stretch />
+				<saveobject label="Save Result As" checkable="true" checked="true" initial="fixed_dates_df" id="date_save" />
+			</column>
+		</row>
+	</dialog>
+</document>

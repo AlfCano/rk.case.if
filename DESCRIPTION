@@ -1,0 +1,21 @@
+Package: rk.case.if
+Type: Package
+Title: An RKWard plugin suite for conditional recoding, case_when
+        logic, and fixing mixed dates using dplyr, janitor, and
+        lubridate.
+Version: 0.0.1
+Date: 2026-07-13
+Author: Alfonso Cano
+Maintainer: Alfonso Cano <alfonso.cano@correo.buap.mx>
+Depends: R (>= 3.5.0)
+Suggests: dplyr, janitor, lubridate, stringr
+Enhances: rkward
+Description: An RKWard plugin suite for conditional recoding, case_when
+        logic, and fixing mixed dates using dplyr, janitor, and
+        lubridate.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyLoad: yes
+URL: https://github.com/AlfCano/rk.case.if
+Authors@R: person(given="Alfonso", family="Cano",
+        email="alfonso.cano@correo.buap.mx", role=c("aut", "cre"))

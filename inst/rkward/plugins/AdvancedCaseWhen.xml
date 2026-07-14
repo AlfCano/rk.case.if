@@ -1,0 +1,45 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="AdvancedCaseWhen.js" />
+	<help file="AdvancedCaseWhen.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Advanced Case_When Builder">
+		<row id="row_vRRDFWRRCA">
+			<varselector id="vs_adv" />
+			<tabbook>
+				<tab label="Rules" id="tab_Rules">
+					<column id="clm_vDFWRRCAWR">
+						<varslot id="adv_df" label="Data Frame" source="vs_adv" classes="data.frame" required="true" />
+						<text id="txt_WrtrRRCA">
+							Write raw R syntax. Remember to quote string values (e.g., 'Category A').
+						</text>
+						<matrix id="adv_mat" label="Case_When Rules" mode="string" horiz_headers="Condition (e.g. age &gt; 18);Assigned Value (e.g. 'Adult')" />
+						<input label="Fallback Value (If no rules match, TRUE ~ ...)" id="adv_fallback" initial="NA_character_" />
+					</column>
+				</tab>
+				<tab label="Output" id="tab_Output">
+					<column id="clm_inptOVNSRA">
+						<input label="Output Variable Name" id="adv_outname" initial="new_var" required="true" />
+						<stretch />
+						<saveobject label="Save Result As" checkable="true" checked="true" initial="casewhen_df" id="adv_save" />
+					</column>
+				</tab>
+			</tabbook>
+		</row>
+	</dialog>
+</document>

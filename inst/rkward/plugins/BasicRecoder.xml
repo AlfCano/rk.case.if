@@ -1,0 +1,60 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="BasicRecoder.js" />
+	<help file="BasicRecoder.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Basic If/Else Recoder">
+		<row id="row_vCCDFTVCRC">
+			<varselector id="vs_basic" />
+			<tabbook>
+				<tab label="Condition" id="tab_Conditin">
+					<column id="clm_vDFTVCRCRC">
+						<varslot id="bas_df" label="Data Frame" source="vs_basic" classes="data.frame" required="true" />
+						<varslot id="bas_var" label="Target Variable" source="vs_basic" required="true" />
+						<frame label="Condition Rule" id="frm_CondtnRl">
+							<dropdown id="bas_cond" label="Condition (If Variable...)">
+								<option label="Is exactly equal to (==)" value="==" checked="true" />
+								<option label="Is NOT equal to (!=)" value="!=" />
+								<option label="Is Greater than (&gt;)" value="&gt;" />
+								<option label="Is Less than (&lt;)" value="&lt;" />
+								<option label="Contains text (grepl)" value="grepl" />
+								<option label="Is Empty / Missing (is.na)" value="is.na" />
+								<option label="Is Numeric (is.numeric)" value="is.numeric" />
+								<option label="Is Character/Text (is.character)" value="is.character" />
+							</dropdown>
+							<input label="Value to check (Leave empty for is.na/is.numeric)" id="bas_val" />
+							<checkbox id="bas_text_chk" label="Treat check value as text (adds quotes)" value="1" checked="true" />
+						</frame>
+					</column>
+				</tab>
+				<tab label="Outcomes &amp; Save" id="tab_OutcmsSv">
+					<column id="clm_fOOITRUEIF">
+						<frame label="Outcomes" id="frm_Outcomes">
+							<input label="If TRUE, assign this value:" id="bas_true" />
+							<input label="If FALSE, assign this value (Use target variable name to keep original):" id="bas_false" />
+							<checkbox id="bas_out_text" label="Treat assigned values as text (adds quotes)" value="1" checked="true" />
+						</frame>
+						<input label="Output Variable Name (Use original name to overwrite)" id="bas_outname" initial="new_var" required="true" />
+						<stretch />
+						<saveobject label="Save Result As" checkable="true" checked="true" initial="recoded_df" id="bas_save" />
+					</column>
+				</tab>
+			</tabbook>
+		</row>
+	</dialog>
+</document>

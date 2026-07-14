@@ -1,0 +1,141 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: rk.case.if 0.0.1\n"
+"Report-Msgid-Bugs-To: alfonso.cano@correo.buap.mx\n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Conditional Recoding"
+msgstr "Bedingte Umkodierung"
+
+msgid "Basic If/Else Recoder"
+msgstr "Einfacher If/Else-Umkodierer"
+
+msgid "Basic Recoder"
+msgstr "Einfacher Umkodierer"
+
+msgid "Data Frame"
+msgstr "Data Frame"
+
+msgid "Target Variable"
+msgstr "Zielvariable"
+
+msgid "Condition (If Variable...)"
+msgstr "Bedingung (Wenn die Variable...)"
+
+msgid "Is exactly equal to (==)"
+msgstr "Genau gleich ist (==)"
+
+msgid "Is NOT equal to (!=)"
+msgstr "NICHT gleich ist (!=)"
+
+msgid "Is Greater than (>)"
+msgstr "Größer ist als (>)"
+
+msgid "Is Less than (<)"
+msgstr "Kleiner ist als (<)"
+
+msgid "Contains text (grepl)"
+msgstr "Text enthält (grepl)"
+
+msgid "Is Empty / Missing (is.na)"
+msgstr "Leer / Fehlend ist (is.na)"
+
+msgid "Is Numeric (is.numeric)"
+msgstr "Numerisch ist (is.numeric)"
+
+msgid "Is Character/Text (is.character)"
+msgstr "Text/Zeichen ist (is.character)"
+
+msgid "Value to check (Leave empty for is.na/is.numeric)"
+msgstr "Zu prüfender Wert (Leer lassen bei is.na/is.numeric)"
+
+msgid "Treat check value as text (adds quotes)"
+msgstr "Prüfwert als Text behandeln (fügt Anführungszeichen hinzu)"
+
+msgid "If TRUE, assign this value:"
+msgstr "Wenn WAHR, weise diesen Wert zu:"
+
+msgid "If FALSE, assign this value (Use target variable name to keep original):"
+msgstr "Wenn FALSCH, weise diesen Wert zu (Zielvariablenname verwenden, um Original zu behalten):"
+
+msgid "Treat assigned values as text (adds quotes)"
+msgstr "Zugewiesene Werte als Text behandeln (fügt Anführungszeichen hinzu)"
+
+msgid "Output Variable Name (Use original name to overwrite)"
+msgstr "Name der Ausgabevariablen (Originalname zum Überschreiben verwenden)"
+
+msgid "Save Result As"
+msgstr "Ergebnis Speichern Unter"
+
+msgid "Condition Rule"
+msgstr "Bedingungsregel"
+
+msgid "Outcomes"
+msgstr "Ergebnisse"
+
+msgid "Condition"
+msgstr "Bedingung"
+
+msgid "Outcomes & Save"
+msgstr "Ergebnisse & Speichern"
+
+msgid "Advanced Case_When Builder"
+msgstr "Erweiterter Case_When-Builder"
+
+msgid "Advanced Case When"
+msgstr "Erweitertes Case When"
+
+msgid "Case_When Rules"
+msgstr "Case_When-Regeln"
+
+msgid "Condition (e.g. age > 18)"
+msgstr "Bedingung (z.B. age > 18)"
+
+msgid "Assigned Value (e.g. 'Adult')"
+msgstr "Zugewiesener Wert (z.B. 'Erwachsener')"
+
+msgid "Fallback Value (If no rules match, TRUE ~ ...)"
+msgstr "Standardwert (Wenn keine Regeln zutreffen, TRUE ~ ...)"
+
+msgid "Output Variable Name"
+msgstr "Name der Ausgabevariablen"
+
+msgid "Write raw R syntax. Remember to quote string values (e.g., 'Category A')."
+msgstr "Schreiben Sie reine R-Syntax. Denken Sie an Anführungszeichen bei Text (z.B. 'Kategorie A')."
+
+msgid "Rules"
+msgstr "Regeln"
+
+msgid "Output"
+msgstr "Ausgabe"
+
+msgid "Fix Mixed Dates (Excel/Text)"
+msgstr "Gemischte Daten Reparieren (Excel/Text)"
+
+msgid "Fix Mixed Dates"
+msgstr "Gemischte Daten Reparieren"
+
+msgid "Messy Date Variable"
+msgstr "Unsaubere Datumsvariable"
+
+msgid "Text Date Format (for non-Excel dates)"
+msgstr "Text-Datenformat (für Nicht-Excel-Daten)"
+
+msgid "Year-Month-Day (ymd)"
+msgstr "Jahr-Monat-Tag (ymd)"
+
+msgid "Day-Month-Year (dmy)"
+msgstr "Tag-Monat-Jahr (dmy)"
+
+msgid "Month-Day-Year (mdy)"
+msgstr "Monat-Tag-Jahr (mdy)"
+
+msgid "Year-Month-Day Hour:Min:Sec (ymd_hms)"
+msgstr "Jahr-Monat-Tag Stunde:Min:Sek (ymd_hms)"
+
+msgid "Detects and converts Microsoft Excel serial numbers (e.g., 44197) and standard text dates simultaneously."
+msgstr "Erkennt und konvertiert gleichzeitig Microsoft Excel-Seriennummern (z.B. 44197) und Standard-Textdaten."

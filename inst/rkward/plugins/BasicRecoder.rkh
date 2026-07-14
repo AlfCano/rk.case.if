@@ -1,0 +1,53 @@
+<!DOCTYPE rkhelp >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<summary>
+	</summary>
+	<usage>
+	</usage>
+	<!--
+		<section id="sct_EDITORDE" title="EDIT OR DELETE ME">
+			EDIT OR DELETE ME
+		</section>
+	-->
+	<settings>
+		<caption id="tab_Conditin" />
+		<setting id="bas_df">
+		</setting>
+		<setting id="bas_var">
+		</setting>
+		<caption id="frm_CondtnRl" />
+		<setting id="bas_cond">
+		</setting>
+		<setting id="bas_val">
+		</setting>
+		<setting id="bas_text_chk">
+		</setting>
+		<caption id="tab_OutcmsSv" />
+		<caption id="frm_Outcomes" />
+		<setting id="bas_true">
+		</setting>
+		<setting id="bas_false">
+		</setting>
+		<setting id="bas_out_text">
+		</setting>
+		<setting id="bas_outname">
+		</setting>
+		<setting id="bas_save">
+		</setting>
+	</settings>
+	<!--
+		<related>
+			<ul>
+				<li>
+					<link href="rkward://rhelp/..." />
+				</li>
+			</ul>
+		</related>
+	-->
+	<technical>
+	</technical>
+</document>
